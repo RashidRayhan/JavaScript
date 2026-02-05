@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Syntax code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Javascript Number-->
+    <div class="container mt-5">
+        <h2>JavaScript Numbers</h2>
+        <p>Number can be written with or without decimals.</p>
+        <h3 id="number"></h3>
+        <script>
+            document.getElementById("number").innerHTML=10.5;
+        </script>
+    </div>
+    <!--JavaScript Syntax-->
+    <div class="container mt-5">
+        <h2>JavaScript Syntax</h2>
+        <h4>The let and const keywords create variables</h4>
+        <p id="syntax"></p>
+        <script>
+            // Define x as a variable
+            let x = 'Jhon';
+            // Assign the value 6 to x
+            const y = 5;
+            document.getElementById("syntax").innerHTML = x + " is " + y + " Years Old";
+        </script>
+    </div>
+
+    <!--JavaScript Operators-->
+    <div class="container mt-5">
+        <h2>JavaScript Operators</h2>
+        <h4>The Assignment (=) Operator</h4>
+        <p id="operator"></p>
+        <script>
+            let x = 5;
+            let y = 6;
+            let sum = x + y;
+
+            document.getElementById("operator").innerHTML = "The sum is " + sum;
+        </script>
+        <script>
+            let x = 5;
+            let y = 6;
+            let sum = x + y;
+
+            document.getElementById("demo").innerHTML = "The sum is " + sum;
+        </script>
+    </div>
+</body>
+</html>
