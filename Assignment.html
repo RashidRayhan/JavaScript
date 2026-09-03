@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+    <script src="myscript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</script>
+</head>
+<body>
+<div class="continer">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+</div>
+
+    <script>
+        //Simple Assignment Examples
+        let x = 10;
+        document.getElementById("demo").innerHTML = "The x value is"+ x;
+        let y = 40;
+        let z = 10 + y;
+        document.getElementById("demo1").innerHTML = "The x + y value is " + z;
+
+        //The += Operator
+        var a = 30;
+        a += 10;
+        document.getElementById("demo2").innerHTML = "The new a += value is " + a;
+
+        //The -= Operator
+        var b = 20;
+        b -= 10;
+        document.getElementById("demo3").innerHTML = "The subs is work b-= " + b;
+        //The *= Operator
+        var c = 10;
+        c *= 3;
+        document.getElementById("demo4").innerHTML = "The mutli work is " + c;
+        //The **= Operator
+        var d = 20;
+        d **= 2;
+        document.getElementById("demo5").innerHTML = "The total result is " + d;
+
+        //The /= Operator
+        let e = 100;
+        e /= 20;
+        document.getElementById("demo6").innerHTML = "The total result for '/' " + e;
+
+        //The %= Operator
+        let f = 10;
+        f %= 5;
+        document.getElementById("demo7").innerHTML = "The % result is " + f;
+
+        //The = Operator
+        let text = "hello World"
+        document.getElementById("demo8").innerHTML = text;
+
+        //The += Operator
+        let txt = "hello ";
+        txt += "world";
+        document.getElementById("demo9").innerHTML = txt;
+
+        //The &&= Operator
+        let txt1 = true;
+        let txt2 = txt1 &&= 10;
+        document.getElementById("demo10").innerHTML = txt2;
+        //false
+        let txt3 = false;
+        let txt4 = txt3 &&= 10;
+        document.getElementById("demo11").innerHTML = txt4;
+        //undefined
+        //let txt5 = undefined;
+        //txt6 = text5 &&= 10;
+        //document.getElementById("demo12").innerHTML = txt6;
+        //The Spread (...) Operator
+        let texts = "123456";
+        let min = Math.min(...texts);
+        let max = Math.max(...texts);
+        document.getElementById("demo13").innerHTML = "The min number is: " + min + "<br> The max number is: " + max;
+    </script>
+</body>
+</html>
