@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>This is Javascript if condition statment</title>
+</header>
+<body>
+<h2>If condition statment and their result</h2>
+<p id ="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<script>
+if (new Date().getHours() < 18){
+    document.getElementById("demo").innerHTML = "Good Day"; //output 'Good Day'
+}
+//if condition for age conditions and result print true or false
+let age = 18;
+let txt = "You can not drive the car";
+
+if (age >= 18)  {
+    txt = "You can drive the car";
+}
+document.getElementById("demo1").innerHTML = txt;   //output 'You can drive the car'
+
+//if statement under 18 age print false result
+let ages = 16;
+let text = "You can not drive the car now";
+if (ages >= 18) {
+    text = "You can drive the car now";
+}
+document.getElementById("demo2").innerHTML = text;  //output 'You can not drive the car now'
+
+//You can use an if statement inside another if statement:
+ let country = "USA";
+ let your_age = 18;
+ let type = "You can not drive the car";
+
+if (country == "USA") {
+    if (your_age >= 16) {
+        type = "You can drive the car";
+    }
+}
+document.getElementById("demo3").innerHTML = type;  //output 'You can drive the car'
+
+let under_age = 16;
+let countries = "USA";
+let my_txt = "You can not drive my car";
+
+if (countries && under_age >= 16) {
+    my_txt = "You can drive my car"
+}
+document.getElementById("demo4").innerHTML = my_txt;
+
+//The else Statement
+// if (condition) {
+  //  block of code to be executed if the condition is true
+// } else {
+  //  block of code to be executed if the condition is false
+//}
+
+const hour = new Date().getHours();
+let greeting ;
+
+if (hour >= 18){
+    greeting = "This is your time"
+} else {
+    greeting = "It's my time"
+}
+document.getElementById("demo5").innerHTML= greeting;
+
+//Use the else if statement to specify a new condition if the first is false.
+// if (condition1) {
+    //  block of code to be executed if condition1 is true
+// } else if (condition2) {
+     //  block of code to be executed if the condition1 is false and condition2 is true
+// } else {
+    //  block of code to be executed if the condition1 is false and condition2 is false
+// }
+const time = new Date().getHours();
+let el_txt;
+
+if (time < 10) {
+    el_txt = "Good Morning";
+} else if ( time < 14) {
+    el_txt = "Good afternoon";
+} else {
+    el_txt = "Good Night";
+}
+document.getElementById("demo6").innerHTML = el_txt;
+
+//we try to output result
+let marks = 90;
+let grade;
+if (marks >= 80) {
+    grade = "A+"
+} else if ( marks >= 70) {
+    grade = "A"
+} else if (marks >= 60) {
+    grade = "B"
+} else if (marks >= 50) {
+    grade = "C"
+} else if (marks >= 40) {
+    grade = "D"
+} else {
+    grade = "F"
+}
+document.getElementById("demo7").innerHTML =  grade;
+
+//The JavaScript Ternary Operator
+let my_ages = 18;
+let my_text = (my_ages >= 19) ? "Minor" : "Adult";
+document.getElementById("demo8").innerHTML = my_text;
+</script>
+</body>
+</html>
