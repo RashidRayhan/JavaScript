@@ -14,6 +14,14 @@
 <p id="demo6"></p>
 <p id="demo7"></p>
 <p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
 <script>
 if (new Date().getHours() < 18){
     document.getElementById("demo").innerHTML = "Good Day"; //output 'Good Day'
@@ -115,6 +123,77 @@ document.getElementById("demo7").innerHTML =  grade;
 let my_ages = 18;
 let my_text = (my_ages >= 19) ? "Minor" : "Adult";
 document.getElementById("demo8").innerHTML = my_text;
+
+//Javascript switch statments
+switch (new Date().getDay()){
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+document.getElementById("demo9").innerHTML = "Today is " + day;
+
+//The default Keyword
+switch(number=31){
+    case 80:
+        grade = "A+";
+        break;
+    case 70:
+        grade = "A";
+        break;
+    case 60:
+        grade = "B";
+        break;
+    case 50:
+        grade = "C";
+        break;
+    case 40:
+        grade = "D";
+        break;
+    default:
+        grade = "'F'. Please try Next time";
+}
+document.getElementById("demo10").innerHTML = "You got GPA " + grade;
+//Strict Comparison
+let num = 80;
+switch(num){
+    case 10:
+        point = "C";
+        break;
+    case 20:
+        point = "B";
+        break;
+    case 60:
+        point = "A";
+        break;
+    case 80:
+        point = "A+";
+        break;
+    default:
+        point = "You are out of them";
+}
+document.getElementById("demo11").innerHTML = point;
+
+
+
+
+
 </script>
 </body>
 </html>
