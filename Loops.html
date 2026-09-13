@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <tittle>This is javascript loops</tittle>
+</header>
+<body>
+    <p id ="demo"></p>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <p id ="demo4"></p>
+    <p id ="demo5"></p>
+    <p id ="demo6"></p>
+    <p id ="demo7"></p>
+    <p id ="demo8"></p>
+    <p id ="demo9"></p>
+    <p id ="demo10"></p>
+    <p id ="demo11"></p>
+    <p id ="demo12"></p>
+    <p id ="demo13"></p>
+    <p id ="demo14"></p>
+    <p id ="demo15"></p>
+    <p id ="demo16"></p>
+<script>
+// for loops 
+const cars = ["BMW", "Audi", "Ferri", "Ford", "toyota"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br/>";
+}
+document.getElementById("demo").innerHTML = text;
+// for loops to use agai and again to type some code
+const numbers = [1, 2, 3, 4, 5, 6];
+let txt = "";
+for (let x = 0; x < numbers.length; x++) {
+    txt += numbers[x] +"<br>";
+}
+document.getElementById("demo1").innerHTML = txt;
+let txts = "";
+for (let y = 0; y < 5; y++) {
+    txts += "This is number "+ y + "<br/>";
+}
+document.getElementById("demo2").innerHTML = txts;
+
+//When a variable is declared with let or const inside a loop, it will only be visible within the loop.
+let texts = 5; //Loop Scope
+for (texts = 0; texts < 10; texts++) {
+}
+document.getElementById("demo3").innerHTML = texts; //output 10
+
+//The While Loop
+let a = 0;
+let b = "";
+while (a < 10) {
+    b += "This is number a " + a + "<br>";
+    a++;
+}
+document.getElementById("demo4").innerHTML = b;
+
+//The Do While Loop
+let c = "";
+let d = 0;
+do {
+    c += "This number is d " + d + "<br/>";
+    d++;
+}
+while (d < 10)
+document.getElementById("demo5").innerHTML = c;
+
+//javascript for loops
+let e = 0;
+let f = "";
+for (e = 0; e < 5; e++){
+    f += "This is number e " + e + "<br>";
+}
+document.getElementById("demo6").innerHTML = f;
+// count number and print
+const car = ["BMW", "Volvo", "Saab", "Ford"];
+let g = "";
+for (h = 2; h < car.length; h++) {
+    g += car[h] + "<br/>";
+}
+document.getElementById("demo7").innerHTML = g;
+//Javascript break statment
+let z = "";
+loop1: for (let i = 1; i < 5; i++) {
+    loop2: for(let j = 1; j < 5; j++){
+        if (j === 3){break loop2;}
+        z += j + "<br>";
+    }
+}
+document.getElementById("demo8").innerHTML = z;
+
+//JavaScript Continue
+let text3 = "";
+loop3: for (let n = 1; n < 5; n++) {
+  loop4: for (let m = 1; m < 5; m++) {
+    if (m === 3) { continue loop4; }
+    text3 += m;
+   }
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
