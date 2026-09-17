@@ -67,8 +67,46 @@ for(const x of tags) {
 html += `</ul>`;
 document.getElementById("demo6").innerHTML = html;
 
+//String Methods
+//String Length
+let txt1 = "abcedefghijklmnopqrstuvwxyz";
+document.getElementById("demo7").innerHTML = txt1.length;
 
+//String charAt()
+let txt2 = "hello World";
+document.getElementById("demo8").innerHTML = txt2.charAt(4);
 
+// String charCodeAt()
+let txt3 = "Hello World";
+document.getElementById("demo9").innerHTML = txt3.charCodeAt(0);
+
+//codePointAt()
+let txt4 = "Hello World";
+document.getElementById("demo10").innerHTML = txt4.codePointAt(1);
+//String at()
+let txt5 = "World";
+document.getElementById("demo11").innerHTML = txt5.at(0);
+
+let txt6 = "W3schools";
+document.getElementById("demo12").innerHTML = txt6.at(-2);
+
+//String concat()
+let txt7 = "hello";
+let txt8 = "World";
+let txt9 = txt7.concat(" ", txt8);
+document.getElementById("demo13").innerHTML = txt9;
+
+//String slice()
+let txt10 = "Apple, Banana, Kiwi";
+document.getElementById("demo14").innerHTML = txt10.slice(7, 13);
+
+let fruit = "Apple, Banana, Cherry, Kiwi";
+let part = fruit.slice(7);
+document.getElementById("demo15").innerHTML = part; //substring(), substr() are work same
+
+//Converting to Upper and Lower Case
+let text11 = "hello world";
+document.getElementById("demo16").innerHTML = txt11.toUpperCase;
 
 
 </script>
